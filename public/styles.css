@@ -1,0 +1,257 @@
+nav {
+    background-color: rgb(129, 50, 199);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-link {
+    flex: 1; 
+    text-align: center; 
+    color: white;
+    text-decoration: none;
+}
+
+.left, .middle, .right, .account, .home {
+    flex: 1; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+    padding: 15px 0;
+}
+
+.left:hover, .middle:hover, .right:hover, .account:hover, .home:hover {
+    background-color: rgb(181, 69, 255);
+    color: white;
+}
+
+.account {
+    text-align: center;
+}
+
+#dropdown {
+    display: none;
+    z-index: 1;
+}
+#dropdown a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.account:hover #nav-link, .account:hover #dropdown {
+    display: block;
+}
+
+/* Weather */
+.bod-weather {
+    background-color: rgb(165, 130, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.bod-calendar {
+    background-color: rgb(165, 130, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.bod-planner {
+    background-color: rgb(165, 130, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:3%;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+
+.logo {
+    display: block;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    opacity: 0.7;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    color: white;
+    margin: 8px 0;
+}
+
+input {
+    width: calc(100% - 30px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+button {
+    background: rgb(165, 130, 246);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: rgb(150, 122, 213);
+}
+
+#temperature-info p {
+    font-size: 5vh;
+    margin-top: -10px;
+}
+
+#weather-info p {
+    font-size: 4vh;
+}
+#weather-info p.desc {
+    font-size: 3vh;
+}
+
+
+#weather-icon {
+    width: 30%;
+    height: 30%;
+    margin: 0 auto 5px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+
+.hourly-item img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 5px;
+}
+
+
+/* Calendar page */
+
+#calendar-page {
+    margin-top: -20px;
+    width: 60%;
+  }
+
+
+/* Planner */
+
+#calendar-container {
+    width: 70%;
+    padding: 20px;
+    border-right: 1px solid #ccc; 
+  }
+
+#calendar {
+    width: 80%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px;
+  }
+
+#weather-container {
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+  }
+
+
+/* Login home page */
+.bod-login {
+    background-color: rgb(165, 130, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-top: 10%; 
+}
+
+.login-logo {
+    width: 30%;
+    padding: 20px;
+    border-right: 1px solid #ccc; 
+  }
+
+.login-div {
+    width: 70%;
+    padding: 20px;
+
+  }
+
+.login-form {
+    max-width: 50%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Logout page */
+
+.bod-logout {
+    background-color: rgb(165, 130, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}

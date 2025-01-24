@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Planner</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css'/>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js'></script>
+</head>
+<body>
+    <!-- Add userId as a JavaScript variable -->
+    <script>
+        <% if (userId) { %>
+            window.sessionUserId = '<%= userId %>';
+        <% } else { %>
+            window.sessionUserId = null;
+        <% } %>
+    </script>
+    
+    <header>
+        <nav>
+            <a href="/" class="nav-link">
+                <div class="home">Home</div>
+            </a>
+            <a href="/weather" class="nav-link">
+                <div class="left">Weather</div>
+            </a>
+            <a href="/calendar" class="nav-link">
+                <div class="middle">Calendar</div>
+            </a>
+            <a href="/planner" class="nav-link">
+                <div class="right">Planner</div>
+            </a>
+            <div class="account">
+                <a href="/account" class="nav-link">Account</a>
+                <div id="dropdown" class="dropdown">
+                    <a href="/register">Register</a>
+                </div>
+                <div id="dropdown" class="dropdown">
+                    <a href="/">Login</a>
+                </div>
+                <div id="dropdown" class="dropdown">
+                    <a href="/logout">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

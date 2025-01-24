@@ -1,0 +1,13 @@
+<%- include ('partials/header.ejs') %>
+<body class="bod-weather">
+    <div id="weather-container">
+        <h2>Weather</h2>
+        <input type="text" id="city" placeholder="Enter City">
+        <button onclick="getWeather()">Search</button>
+        <img id="weather-icon" alt="Weather Icon">
+        <div id="temperature-info"></div>
+        <div id="weather-info"></div>
+        <div id="hourly-forecast"></div>
+    </div>    
+</body>
+</html>

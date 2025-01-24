@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs') %>
+<body class="bod-logout">
+    <script>
+        window.sessionUserId = <%= userId ? `'${userId}'` : 'null' %>; // Set userId to null after logout
+        
+        setTimeout(() => {
+            window.location.href = '/';
+        }, 2000); // Redirect after 2 seconds
+    </script>
+
+    <div>
+        <p>You have been logged out successfully. Redirecting to the home page...</p>
+    </div>
+</body>
+</html>

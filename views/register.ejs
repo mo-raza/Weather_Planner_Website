@@ -1,0 +1,26 @@
+<%- include ('partials/header.ejs') %>
+<body class="bod-login">
+    <div class="login-logo">
+        <p style="color: white;">
+            Once registered, you will be able to save events that you have logged in to your calendar.
+        </p>
+    </div>
+    <div class="login-div">
+        <form class="login-form" method="POST" action="/register" id="registrationForm">
+            <div>
+                <label for="register-user" class="register-label">&nbsp;Username</label>
+                <input type="text" class="register-input" id="register-user" name="username" required>
+            </div><br>
+            <div>
+                <label for="register-pass" class="register-label">&nbsp;Password</label>
+                <input type="password" class="register-input" id="register-pass" name="password" required>
+            </div>
+            <button type="submit" class="button">Register</button>
+        </form>
+    </div>
+    <script>
+        // If userId is null or undefined, this will handle it safely
+        window.sessionUserId = <%= userId ? `'${userId}'` : 'null' %>;
+    </script>
+</body>
+</html>
